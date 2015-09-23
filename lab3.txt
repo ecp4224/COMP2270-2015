@@ -25,11 +25,16 @@ Problem 3:
 Problem 4:
 	a' * (a + b) + (b + a * a) * (a + b')
 	Idempotence: a' * (a + b) + (b + a) * (a + b')
+	(a' + a) * (a' + b) + (b + a) * (a + b')
+	(1) * (a' + b) + (b + a) * (a + b')
+	1 + (b + a) + (a + b')
+	
+	
 	Idempotence: a' * (a + b) * (a + b')
-	Distributive: a' * a + (b + b')
-	Complement: a' * a + (1)
-	Complement: 0 + (1)
-	Identity: 1
+	Distributive: a' * a + (b * b')
+	Complement: a' * a + (0)
+	Complement: 0 + (0)
+	Identity: 0
 	
 Problem 5:
 	(a' * b') + (a' * b) + (a * b') = (a * b)'
