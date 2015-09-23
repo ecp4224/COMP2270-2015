@@ -1,0 +1,43 @@
+Problem 1:
+	(a * b)' * (a' + b) * (b' + b) = a'
+	DeMorgan: (a' + b') * (a' + b) * (b' + b) = a'
+	Complement: (a' + b') * (a' + b) * (1) = a'
+	Distributive: a' + (b' * b) * (1) = a'
+	Complement: a' + (0) * (1) = a'
+	Identity: a' = a'
+
+Problem 2:
+	c + (b * c)' = 1
+	DeMorgans: c + (b' + c') = 1
+	Commuative: c + b' + c' = 1
+	Commuative: c + c' + b' = 1
+	Complement: 1 + b' = 1
+	Identity: 1 = 1
+
+Problem 3:
+	(a + c) * (a * d + a * d') + a * c + c = c + a
+	Distributive: (a + c) * (a * (d + d')) + a * c + c = c + a
+	Complement: (a + c) * (a * (1)) + a * c + c = c + a
+	Absorption: (a + c) * (a * (1)) + c = c + a
+	Identity: (a + c) * a + c = c + a
+	a + c = c + a
+	
+Problem 4:
+	a' * (a + b) + (b + a * a) * (a + b')
+	Idempotence: a' * (a + b) + (b + a) * (a + b')
+	Idempotence: a' * (a + b) * (a + b')
+	Distributive: a' * a + (b + b')
+	Complement: a' * a + (1)
+	Complement: 0 + (1)
+	Identity: 1
+	
+Problem 5:
+	(a' * b') + (a' * b) + (a * b') = (a * b)'
+	(a' * b') + (a' * b) + (a * b') = a' + b'
+	((a' * b') + a') * ((a' * b') + b) + (a * b') = a' + b'
+	((a' * b') + a') * ((b + a') * (b + b')) + (a * b') = a' + b'
+	((a' * b') + a') * ((b + a') * (0)) + (a * b') = a' + b'
+	((a' * b') + a') * (0) + (a * b') = a' + b'
+	0 + (a * b') = a' + b'
+	(a * b') = a' + b'
+	
