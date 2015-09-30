@@ -46,3 +46,6 @@ Problem 5:
 	0 + (a * b') = a' + b'
 	(a * b') = a' + b'
 	
+Problem 8:
+	a: 6 bits
+	b: 6 bits
