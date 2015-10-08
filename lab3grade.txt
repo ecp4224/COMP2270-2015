@@ -1,0 +1,21 @@
+1. good
+
+2. good
+
+3. good
+
+4. -5: it simplifies to a+b, looks like the 1*(a'+b)->1 step didn't work
+
+5. -3: rule names? the third step looks shifty and a*b' =/= a' + b'
+
+6. -2: you need to use a splitter to combine 3 selector bits
+
+7. not in lab3.circ?
+
+8. -5: there are 6 states, which you can represent with 3 bits, and 3 inputs, which you can represent with 2 bits
+
+9.
+
+10.
+
+
