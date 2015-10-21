@@ -1,0 +1,27 @@
+.data
+size: .word 5
+vals: .word 1, 10, 100, 1000, 10000
+.text
+
+# main program
+main:
+la $s5, size #load size address
+la $s6, vals #load vals address
+
+lw $s1, 0($s5) #load size value
+
+add $s3, $r0, $r0 #reset s3 (the condition check)
+add $v0, $r0, $r0 #reset v0 (the result)
+add $s4, $r0, $r0 #reset s4 (the counter)
+
+begin_while:
+slt $s3, $s4, $s1 #if s4 is less than s1
+beq $s3, $r0, end_while #branch if the above statement was false
+lw $s2, 0($s6) #load next element in array
+add $v0, $v0, $s2 #add on to result
+addi $s6, $s6, 4 #move address by 4 bytes
+addi $s4, $s4, 1 #add 1 to the counter
+j begin_while #go back to begging of while loop
+
+end_while:
+add $v0, $v0, $r0 #idk do something
