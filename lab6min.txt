@@ -1,0 +1,7 @@
+LOAD R1, 0x8 #Load 0x8 into R1
+LOAD R2, 0xA #Load 0xA into R2
+SUB R3, R1, R2 #Do R3 = R1 - R2
+JZL R3, 6 #If R3 is less than 0, then R1 must be smaller than R2
+STOR R2, 0x0 #If we get here, then R2 is less or equal to R1
+ADD R1, R2, R0 #Set R1 equal to R2, so the next instruction does nothing
+STOR R1, 0x0 #If we jumped here, then R1 must be less than R2. If we didn't jump here, then nothing will happen
