@@ -1,0 +1,4 @@
+avg: r4/r5 are never initialized -3
+
+LOAD machine code is off -2
+

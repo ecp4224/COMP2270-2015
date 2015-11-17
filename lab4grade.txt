@@ -1,0 +1,3 @@
+The output only depends on the state, not the specific input that brought you to that state. It's a Moore machine -4
+
+The state transition table doesn't capture the possible transitions - it only shows transitions for one possible solution. Since it's just solving for a single solution, inputs are irrelevant. The resulting circuit doesn't model the system. -45
