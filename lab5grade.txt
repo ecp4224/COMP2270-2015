@@ -1,0 +1,3 @@
+max: when in1 is larger, the program gets stuck in an infinite loop -5
+
+machine code is a weird mixture of binary and hex -4
