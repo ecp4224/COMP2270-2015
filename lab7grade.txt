@@ -1,0 +1,1 @@
+The Rx and Ry inputs should be handled the same way that the Rd input is handled - you should use a splitter to divide the top/bottom two bits, and use each of those two bits as select bits in a MUX. Right now, you're using the Rd lower two bits as the Rx/Ry MUX in the registers workspace.

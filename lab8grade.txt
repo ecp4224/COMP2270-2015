@@ -1,0 +1,2 @@
+Decoder: operand labels are reversed
+you should always output the immediate value, even if it isn't being used
